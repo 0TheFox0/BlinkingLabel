@@ -128,6 +128,7 @@ void Blinkink::setStep(double arg) {
 void Blinkink::setcolor(QColor arg) {
     if (m_color != arg) {
         m_color = arg;
+        setStep(1);
         emit colorChanged(arg);
     }
 }
