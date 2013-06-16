@@ -8,6 +8,7 @@ Blinkink::Blinkink(QWidget *parent) :
     _bottom(this),
     _animation(this,"step",this)
 {
+    _icon.setSizePolicy(QSizePolicy::Maximum,QSizePolicy::Preferred);
     _layout.addWidget(&_icon,0,0,2,1);
     _layout.addWidget(&_top,0,1);
     _layout.addWidget(&_bottom,1,1);
