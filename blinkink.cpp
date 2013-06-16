@@ -15,17 +15,8 @@ Blinkink::Blinkink(QWidget *parent) :
     _layout.setSpacing(0);
     _layout.setMargin(2);
 
-    QFont f1= _top.font();
-    f1.setBold(true);
-    int s1 = f1.pixelSize();
-    f1.setPixelSize(s1*4/3);
-    _top.setFont(f1);
-
-    QFont f= _bottom.font();
-    f.setItalic(true);
-    int s = f.pixelSize();
-    f.setPixelSize(s*3/4);
-    _bottom.setFont(f);
+    _top.setStyleSheet("font-weight: bold;");
+    _bottom.setStyleSheet("font-style: italic;");
 
     this->setLayout(&_layout);
     _animation.setDuration(2000);
